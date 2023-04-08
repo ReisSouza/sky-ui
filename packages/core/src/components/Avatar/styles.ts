@@ -7,8 +7,7 @@ export const scaleUp = keyframes({
   '100%': { opacity: '0', width: '500px', height: '500px' },
 })
 
-
-// 
+//
 
 export const ContainerAvatar = styled(AvatarPrimitive.Root, {
   display: 'flex',
