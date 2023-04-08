@@ -1,0 +1,40 @@
+{
+  "name": "@sky-ui/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "lint": "eslint src/**/*.ts* --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@sky-ui/eslint-config": "*",
+    "@sky-ui/tokens": "*",
+    "@sky-ui/ts-config": "*",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.0",
+    "@radix-ui/react-checkbox": "^1.0.0",
+    "@radix-ui/react-dialog": "^1.0.3",
+    "@radix-ui/react-label": "^2.0.1",
+    "@radix-ui/react-select": "^1.2.1",
+    "@radix-ui/react-slot": "^1.0.1",
+    "@radix-ui/react-toast": "^1.1.3",
+    "@radix-ui/react-tooltip": "^1.0.5",
+    "@stitches/react": "^1.2.8",
+    "icomoon-react": "^3.0.0",
+    "phosphor-react": "^1.4.1"
+  }
+}
